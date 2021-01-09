@@ -1,0 +1,121 @@
+/*Table formatting added by Cherrise H*/
+
+html {
+    height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 20px;
+    }
+    
+    section{
+    margin: 50px;
+    }
+    
+    body{
+     background-image: url();
+    }
+    table{
+     background: linear-gradient(to right, Cornsilk, Bisque);
+     font-family: 'Roboto', sans-serif;
+     width:80%;
+     table-layout: fixed;
+     color: #b33c00;
+     padding: 30px 20px;
+     text-align: left;
+     font-weight: 500;
+     font-size: 15px;
+     border-radius: 25px;
+    }
+    
+    th{
+     padding: 20px;
+     text-align: left;
+     vertical-align:middle;
+     font-weight: 300;
+     border-bottom: solid 1px rgba(255,255,255,0.1);
+     font-size: 25px;
+    }
+    
+    td{
+     padding: 20px;
+     text-align: left;
+     vertical-align:middle;
+     font-weight: 300;
+     border-bottom: solid 1px rgba(255,255,255,0.1);
+    }
+    
+    .deficit {
+     color: red;
+     font-style: italic;
+    }  
+    
+    .payment {
+     color:#006600;
+     font-style: italic;
+    }
+    .button{
+     width: 50%;
+     font-size: 40px;
+     height: 200px;
+     padding: 5px;
+     opacity: 1;
+    }
+
+    /*Pie chart formatting added by Ana D*/
+.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 61%,
+			white 0
+		),
+		conic-gradient(
+			from 60deg,
+			#f28e2c 0,
+			#f28e2c 31.9%,
+			#e15759 0,
+			#e15759 54.1%,
+			#76b7b2 0,
+			#76b7b2 68%,
+			#59a14f 0,
+			#59a14f 76.3%,
+			#edc949 0,
+			#edc949 86%,
+			#c9bd92 0,
+			#c9bd92 99.9%
+	);
+	position: relative;
+	width: 500px;
+	min-height: 350px;
+	margin: 0;
+	outline: 1px solid #ccc;
+}
+.pie-chart h2 {
+	position: absolute;
+	margin: 1rem;
+}
+.pie-chart cite {
+	position: absolute;
+	bottom: 0;
+	font-size: 80%;
+	padding: 1rem;
+	color: gray;
+}
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: smaller;
+	text-align: right;
+}
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}
