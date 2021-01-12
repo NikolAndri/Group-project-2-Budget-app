@@ -28,7 +28,7 @@ body {
   color: hsl(2, 92%, 51%) !important;
 }
 .red-focus:focus {
-  border: 1px solid #hsl(2, 92%, 51%) !important;
+  border: 1px solid hsl(2, 92%, 51%) !important;
 }
 
 /* Upper Section of teh page which contain the graph */
