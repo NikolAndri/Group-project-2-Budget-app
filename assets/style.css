@@ -20,7 +20,7 @@ body {
   position: relative;
   height: 100vh;
   font-weight: 400;
-  background: black;
+  background: rgb(250, 248, 248);
 }
 
 .right {
@@ -209,7 +209,7 @@ body {
   outline: none;
 }
 
-/*Pie chart formatting added by Ana D*/
+/*Pie chart formatting added by Ana D
    .pie-chart {
     background:
       radial-gradient(
