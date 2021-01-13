@@ -137,8 +137,9 @@ body {
   transition: border 0.3s;
 }
 
-.add__description,
-.add__value {
+.add__description_plus,
+.add__value_plus,.add__description_minus,
+.add__value_minus {
   border: 1px solid #e7e7e7;
   background-color: #fff;
   color: inherit;
@@ -150,14 +151,25 @@ body {
   transition: border 0.3s;
 }
 
-.add__description {
+.add__description_plus,.add__description_minus {
   width: 350px;
 }
 .add__value {
   width: 100px;
 }
 
-.add__btn {
+.add__btn_plus {
+  font-size: 35px;
+  background: none;
+  border: none;
+  color: #28b9b5;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.1;
+  margin-left: 10px;
+}
+.add__btn_minus {
   font-size: 35px;
   background: none;
   border: none;

@@ -107,6 +107,7 @@ var budgetController = (function () {
             if (type === "exp") {
                 newItem = new Expense(ID, des, val);
             } else if (type === "inc") {
+  
                 newItem = new Income(ID, des, val);
             }
 
@@ -192,9 +193,12 @@ var budgetController = (function () {
 var UIController = (function () {
     var DOMstrings = {
         inputType: ".add__type",
-        inputDescription: ".add__description",
-        inputValue: ".add__value",
-        inputBtn: ".add__btn",
+        inputDescriptionplus: ".add__description_plus",
+        inputDescriptionminus: ".add__description_minus",
+        inputValueplus: ".add__value_plus",
+        inputValueminus: ".add__value_minus",
+        inputBtnplus: ".add__btn_plus",
+        inputBtnminus: ".add__btn_minus",
         incomeContainer: ".income__list",
         expenseContainer: ".expenses__list",
         budgetLabel: '.budget__value',
@@ -247,11 +251,16 @@ var UIController = (function () {
 
     return {
 
-        getInput: function () {
+        getInputplus: function () {
             return {
-                type: document.querySelector(DOMstrings.inputType).value, // We will get inc or exp
-                description: document.querySelector(DOMstrings.inputDescription).value,
-                value: parseFloat(document.querySelector(DOMstrings.inputValue).value),
+                description: document.querySelector(DOMstrings.inputDescriptionplus).value,
+                value: parseFloat(document.querySelector(DOMstrings.inputValueplus).value),
+            };
+        },
+        getInputminus: function () {
+            return {
+                description: document.querySelector(DOMstrings.inputDescriptionminus).value,
+                value: parseFloat(document.querySelector(DOMstrings.inputValueminus).value),
             };
         },
 
@@ -292,7 +301,7 @@ var UIController = (function () {
         clearFields: function () {
             var fields, fieldsArr;
 
-            fields = document.querySelectorAll(DOMstrings.inputDescription + ', ' + DOMstrings.inputValue);
+            fields = document.querySelectorAll(DOMstrings.inputDescriptionplus + ', ' + DOMstrings.inputValueplus + ', ' + DOMstrings.inputValueminus + ', ' + DOMstrings.inputDescriptionminus);
 
             fieldsArr = Array.prototype.slice.call(fields);
 
@@ -397,13 +406,10 @@ var Controller = (function (budgetCtrl, UICtrl) {
     var setupEventListeners = function () {
         var DOM = UICtrl.getDOMstrings();
 
-        document.querySelector(DOM.inputBtn).addEventListener("click", ctrlAddItem);
+        document.querySelector(DOM.inputBtnplus).addEventListener("click", ctrlAddItem);
+        document.querySelector(DOM.inputBtnminus).addEventListener("click", ctrlAddItem1);
 
-        document.addEventListener("keypress", function (event) {
-            if (event.keyCode === 13 || event.which === 13) {
-                ctrlAddItem();
-            }
-        });
+        
 
         document.querySelector(DOM.container).addEventListener("click",ctrlDeleteItem);
 
@@ -440,22 +446,55 @@ var Controller = (function (budgetCtrl, UICtrl) {
         var input, newItem;
 
         // 1. Get input values
-        input = UICtrl.getInput();
+        input = UICtrl.getInputplus();
+     
 
-        if (input.description !== "" && !isNaN(input.value) && input.value > 0) {
-
+        if (input.Description !== "" && !isNaN(input.value) && input.value > 0) {
+        
             // 2. Add new item to our data structure
-            newItem = budgetCtrl.addItem(input.type, input.description, input.value);
+
+            var type = 'inc';
+            newItem = budgetCtrl.addItem(type, input.description, input.value);
 
             // 3. Add new item to UI
-            UICtrl.addListItem(newItem, input.type);
+            UICtrl.addListItem(newItem, "inc");
 
             // 4. Clear Input Fields 
             UICtrl.clearFields();
 
             // 5. Calculate and Update budget
             updateBudget();
+            updatechar();
+            // 6. Calculate and update Percentages
+            updatePercentages();
 
+        }
+
+    };
+  
+    var ctrlAddItem1 = function () {
+        var input, newItem;
+
+        // 1. Get input values
+        input = UICtrl.getInputminus();
+     
+
+        if (input.Description !== "" && !isNaN(input.value) && input.value > 0) {
+        
+            // 2. Add new item to our data structure
+
+            var type = 'exp';
+            newItem = budgetCtrl.addItem(type, input.description, input.value);
+
+            // 3. Add new item to UI
+            UICtrl.addListItem(newItem, "exp");
+
+            // 4. Clear Input Fields 
+            UICtrl.clearFields();
+
+            // 5. Calculate and Update budget
+            updateBudget();
+            updatechar();
             // 6. Calculate and update Percentages
             updatePercentages();
 
@@ -520,3 +559,4 @@ function clearEverything(){
     if(confirm("This will clear all the data on this page permanently\n Are you sure?"))
         budgetController.clearLocalData();
 }
+

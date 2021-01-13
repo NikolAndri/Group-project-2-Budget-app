@@ -55,19 +55,30 @@
 
   <div class="bottom">
     <div class="add">
+    
       <div class="add__container">
-        <select class="add__type">
-          <option value="inc" selected>+</option>
-          <option value="exp">-</option> 
-        </select>
-        <input type="text" class="add__description" placeholder="Add description" />
-        <input type="number" step="50" class="add__value" placeholder="Value" />
-        <button class="add__btn">
-          <i class="ion-ios-checkmark-outline"></i>
+        <p class="Add_income">Add Income: </p>
+        <input type="text" class="add__description_plus" placeholder="Add Income" />
+        <input type="number" step="50" class="add__value_plus" placeholder="Value" />
+        
+        <button class="add__btn_plus">
+          <i class="ion-ios-plus-outline"></i>
         </button>
       </div>
-    <div>
       
+    <div>
+      <div class="bottom">
+        <div class="add">
+       
+          <div class="add__container">
+            <p class="Add_income">Add Expense: </p>
+            <input type="text" class="add__description_minus" placeholder="Add Expense" />
+            <input type="number" step="50" class="add__value_minus" placeholder="Value" />
+            <button class="add__btn_minus">
+              <i class="ion-ios-minus-outline"></i>
+            </button>
+          </div>
+        <div>
 
 
     </div>
@@ -93,7 +104,7 @@
     
     <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
   </div>
-
+  
   <script src="app.js"></script>
 </body>
 </html>
