@@ -20,9 +20,31 @@ body {
   position: relative;
   height: 100vh;
   font-weight: 400;
-  background: rgb(250, 248, 248);
+  background: rgba(203, 236, 228, 0.849);
 }
 
+/* create row elements*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* make two columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Stacking columns layout*/
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 .right {
   float: right;
 }
@@ -85,7 +107,6 @@ body {
   width: 350px;
   margin: 10px;
 }
-
 .flex-container{
   flex-direction: row;
   display: flex;
@@ -209,7 +230,15 @@ body {
   outline: none;
 }
 
+
 /*Pie chart formatting added by Ana D
+====
+/*Pie chart formatting added by Ana D*/
+/*.figure{
+  table-layout:auto;
+  position: left;
+}
+>>>>>>> ee3d23d2ff4ea072c8c928393d726e312b2b39ed*/
    .pie-chart {
     background:
       radial-gradient(
@@ -267,6 +296,7 @@ body {
     border-radius: 0.2em;
     background: currentColor;
   }
+
   
 /***** LISTS *****/
 .container {
@@ -279,7 +309,7 @@ body {
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
-  }
+  }  
   .flex-container{
     flex-direction: column;
   }
