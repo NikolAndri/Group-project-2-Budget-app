@@ -14,7 +14,7 @@
 }
 
 body {
-  color: #3399ff;
+  color: #000000;
   font-family:monospace;
   font-size: 16px;
   position: relative;
@@ -195,7 +195,7 @@ body {
   font-size: 35px;
   background: none;
   border: none;
-  color: #52b788;
+  color: #106346;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -335,14 +335,14 @@ h2 {
 }
 
 .income__title {
-  color: #52b788;
+  color: #106346;
   padding-bottom: 15px;
-  border-bottom: 1px solid #fff7e6;
+  border-bottom: 1px solid #0f241c;
 }
 .expenses__title {
   color: #FF0000;
   padding-bottom: 15px;
-  border-bottom: 1px solid #fff7e6;
+  border-bottom: 1px solid #0f241c;
 }
 
 .item {
@@ -353,7 +353,7 @@ h2 {
   padding-top: 1px;
 }
 .item:nth-child(even) {
-  background-color: #fff7e6;
+ /* background-color: #fff7e6;*/
 }
 
 .item__description {
