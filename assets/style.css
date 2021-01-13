@@ -172,7 +172,7 @@ body {
 .add__description_plus,
 .add__value_plus,.add__description_minus,
 .add__value_minus {
-  border: 1px solid black;
+  border: 1px solid rgba(203, 236, 228, 0.849);
   background-color: white;
   opacity: 0.9;
   color: inherit;
@@ -352,9 +352,9 @@ h2 {
 .item:first-child {
   padding-top: 1px;
 }
-.item:nth-child(even) {
- /* background-color: #fff7e6;*/
-}
+/*.item:nth-child(even) {
+  background-color: #fff7e6;
+}*/
 
 .item__description {
   float: left;
@@ -365,7 +365,7 @@ h2 {
   transition: transform 0.3s;
 }
 
-.item__percentage {
+/*.item__percentage {
   float: left;
   margin-left: 20px;
   transition: transform 0.3s;
@@ -375,7 +375,7 @@ h2 {
   border-radius: 3px;
   width: 32px;
   text-align: center;
-}
+}*/
 
 .income .item__value,
 .income .item__delete--btn {
