@@ -187,19 +187,26 @@ body {
 
 /***** LISTS *****/
 .container {
+  display: flex;
   width: 1000px;
   margin: 60px auto; 
+  flex-direction: row;
+}
 
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .income {
-  float: left;
+  float: center;
   width: 400px;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .expenses {
-  float: left;
+  float: center;
   width: 400px;
 }
 
