@@ -20,7 +20,7 @@ body {
   position: relative;
   height: 100vh;
   font-weight: 400;
-  background: url(background.png) black;
+  background: url(background.png) white;
 }
 
 .right {
@@ -147,12 +147,12 @@ body {
   font-size: 14px;
   padding: 12px 15px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: border 0.3s;
 }
 
 .add__description {
-  width: 400px;
+  width: 350px;
 }
 .add__value {
   width: 100px;
@@ -188,18 +188,19 @@ body {
 /***** LISTS *****/
 .container {
   width: 1000px;
-  margin: 60px auto;
+  margin: 60px auto; 
+
 }
 
 .income {
   float: left;
-  width: 475px;
+  width: 400px;
   margin-right: 50px;
 }
 
 .expenses {
   float: left;
-  width: 475px;
+  width: 400px;
 }
 
 h2 {
@@ -209,7 +210,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-.icome__title {
+.income__title {
   color: #3BFFB9;
 }
 .expenses__title {
@@ -311,9 +312,10 @@ h2 {
   border: 0;
   background-color: white;
   padding: 12px;
+  border-radius: 50px;
   transition-duration: 0.4s;
 }
 .clear-button:hover {
-    background-color: #888888;
+    background-color: #FF0000;
     color: white;
   }
