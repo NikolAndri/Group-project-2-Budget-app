@@ -20,7 +20,7 @@ body {
   position: relative;
   height: 100vh;
   font-weight: 400;
-  background:black;
+  background: black;
 }
 
 .right {
@@ -38,7 +38,6 @@ body {
 .top {
   height: 40vh;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
@@ -210,6 +209,65 @@ body {
   outline: none;
 }
 
+/*Pie chart formatting added by Ana D*/
+   .pie-chart {
+    background:
+      radial-gradient(
+        circle closest-side,
+        transparent 61%,
+        white 0
+      ),
+      conic-gradient(
+        from 60deg,
+        #f28e2c 0,
+        #f28e2c 31.9%,
+        #e15759 0,
+        #e15759 54.1%,
+        #76b7b2 0,
+        #76b7b2 68%,
+        #4b4e4b 0,
+        #59a14f 76.3%,
+        #edc949 0,
+        #edc949 86%,
+        #c9bd92 0,
+        #c9bd92 99.9%
+    );
+    position: relative;
+    width: 500px;
+    min-height: 350px;
+    margin: 0;
+    outline: 1px solid white;
+
+  }
+  .pie-chart h2 {
+    position: absolute;
+    margin: 1rem;
+  }
+  .pie-chart cite {
+    position: absolute;
+    bottom: 0;
+    font-size: 80%;
+    padding: 1rem;
+    color: gray;
+  }
+  .pie-chart figcaption {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: smaller;
+    text-align: right;
+  }
+  .pie-chart span:after {
+    display: inline-block;
+    content: "";
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.4em;
+    height: 0.8em;
+    border-radius: 0.2em;
+    background: currentColor;
+  }
+  
 /***** LISTS *****/
 .container {
   display: flex;
@@ -248,18 +306,21 @@ h2 {
 
 .income__title {
   color: #52b788;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff7e6;
 }
 .expenses__title {
   color: #FF0000;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff7e6;
 }
 
 .item {
   padding: 13px;
-  border-bottom: 1px solid #fff7e6;
 }
 
 .item:first-child {
-  border-top: 1px solid #fff7e6;
+  padding-top: 1px;
 }
 .item:nth-child(even) {
   background-color: #fff7e6;
