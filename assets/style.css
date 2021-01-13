@@ -37,9 +37,8 @@ body {
 
 .top {
   height: 40vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom right;
   position: relative;
 }
 
@@ -202,12 +201,14 @@ body {
 .income {
   float: center;
   width: 400px;
-  margin-right: 60px;
+  margin: 60px;
 }
 
 .expenses {
   float: center;
   width: 400px;
+  margin: 60px;
+
 }
 
 h2 {
