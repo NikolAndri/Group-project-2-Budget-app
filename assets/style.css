@@ -200,13 +200,13 @@ body {
 }
 
 .income {
-  float: left;
+  float: center;
   width: 400px;
   margin-right: 60px;
 }
 
 .expenses {
-  float: left;
+  float: center;
   width: 400px;
 }
 
