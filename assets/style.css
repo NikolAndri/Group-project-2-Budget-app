@@ -153,7 +153,8 @@ body {
 .add__value_plus,.add__description_minus,
 .add__value_minus {
   border: 1px solid black;
-  background-color: #fff;
+  background-color: white;
+  opacity: 0.9;
   color: inherit;
   font-family: inherit;
   font-size: 14px;
@@ -164,7 +165,7 @@ body {
 }
 
 .add__description_plus,.add__description_minus {
-  width: 350px;
+  width: 300px;
 }
 .add__value {
   width: 100px;
@@ -236,7 +237,6 @@ body {
   float: center;
   width: 350px;
   margin: 10px;
-
 }
 
 h2 {
