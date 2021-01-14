@@ -488,13 +488,28 @@ h2 {
     align-self: center;
   }
 
-  .insipirationalQuotes{
+.insipirationalQuotes{
   border-radius: 25px;
-  margin: 20px;
-  padding: 25px;
+  margin: 1em auto 50px;
+  padding: 50px 40px;
+  width: 270px;
   background-color: white;
   text-align: center;
+  position: relative;
+
+
   }
+.insipirationalQuotes:after {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:110px;
+  border-width:0 0 30px 20px;
+  border-style:solid;
+  border-color: transparent white;
+  display: block;
+  width:0;
+}
 
 .quote{
 color: #106346;
@@ -503,7 +518,7 @@ font-size: larger;
 }
 
 .author{
-  padding-bottom: 20px;
+  padding: 20px;
   color:#1080ff;
 }
 
