@@ -32,6 +32,8 @@ h1{
   font-style: italic;
   color: #106346;
   font-family: 'Fraunces', serif;
+  padding: 10px;
+
 }
 
 /* create row elements*/
@@ -73,10 +75,12 @@ h1{
 /* Upper Section of teh page which contain the graph */
 
 .top {
-  height: 40vh;
+  height: 60%;
   background-size: cover;
   background-position: center;
   position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .budget {
