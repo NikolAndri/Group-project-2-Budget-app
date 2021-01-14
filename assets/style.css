@@ -192,6 +192,7 @@ body {
 
 .add__description_plus,.add__description_minus {
   width: 300px;
+  outline: none;
 }
 .add__value {
   width: 100px;
@@ -199,6 +200,7 @@ body {
 
 .add__btn_plus {
   font-size: 35px;
+  outline: none;
   background: none;
   border: none;
   color: #106346;
@@ -211,6 +213,7 @@ body {
 
 .add__btn_minus {
   font-size: 35px;
+  outline: none;
   background: none;
   border: none;
   color: #d90429;
@@ -441,6 +444,7 @@ h2 {
 
 .clear-button {
   text-transform: uppercase;
+  outline: none;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 0;
   background-color: white;
