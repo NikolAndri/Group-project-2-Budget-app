@@ -28,28 +28,37 @@ body {
   background: rgba(203, 236, 228, 0.849);
 }
 
-/* create row elements
+h1{
+  font-style: italic;
+  color: #106346;
+  font-family: 'Fraunces', serif;
+}
+
+/* create row elements*/
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  width:100%;
 }
 
- make two columns 
-@media (max-width: 800px) {
+ /*make two columns */
+@media (max-width: 2000px) {
   .column {
     flex: 50%;
     max-width: 50%;
+    padding: 10px;
   }
 }
 
- Stacking columns layout
-@media (max-width: 600px) {
+ /*Stacking columns layout*/
+@media (max-width: 900px) {
   .column {
     flex: 100%;
     max-width: 100%;
+
   }
-}*/
+}
 
 .right {
   float: right;
@@ -492,7 +501,7 @@ h2 {
   border-radius: 25px;
   margin: 1em auto 50px;
   padding: 50px 40px;
-  width: 270px;
+  width: 400px;
   background-color: white;
   text-align: center;
   position: relative;
@@ -518,7 +527,7 @@ font-size: larger;
 }
 
 .author{
-  padding: 20px;
+  padding-top: 20px;
   color:#1080ff;
 }
 
