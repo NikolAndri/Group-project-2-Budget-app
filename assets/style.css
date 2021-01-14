@@ -513,7 +513,7 @@ h2 {
   position:absolute;
   bottom:-30px;
   right:110px;
-  border-width:0 0 30px 20px;
+  border-width:0px 0px 30px 20px;
   border-style:solid;
   border-color: transparent white;
   display: block;
