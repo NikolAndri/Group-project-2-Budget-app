@@ -12,6 +12,12 @@
   clear: both;
 }
 
+a{
+	text-decoration: none;
+	opacity: 0.75;
+	color: rgb(255, 255, 255);
+}
+
 body {
   color: #000000;
   font-family:monospace;
@@ -462,6 +468,7 @@ h2 {
   }
 
   footer ul li {
+    list-style: none;
     margin-left: 16px;
     list-style: none;
   }
