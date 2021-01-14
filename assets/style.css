@@ -473,6 +473,9 @@ h2 {
     align-self: center;
   }
 
+a{
+  color:white;
+}
   #fb:hover {
     color: #3B5998;
   }
@@ -483,4 +486,7 @@ h2 {
 
   #tw:hover {
     color: #4099FF;
+  }
+  #gh:hover {
+    color: #000000;
   }
