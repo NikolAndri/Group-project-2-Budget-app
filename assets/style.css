@@ -504,7 +504,23 @@ font-size: larger;
   padding-top: 20px;
   color:#1080ff;
 }
+ 
+.donate-button {
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0;
+  background-color: white;
+  padding: 12px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  margin-bottom: 20px;
+}
 
+.donate-button:hover {
+    background-color: #106346;
+    color: white;
+  } 
 /* footer stuff (Uri)*/
 footer {
   display: flex;
