@@ -1,6 +1,5 @@
 /* General Layout */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -23,14 +22,14 @@ body {
   background: rgba(203, 236, 228, 0.849);
 }
 
-/* create row elements*/
+/* create row elements
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* make two columns */
+ make two columns 
 @media (max-width: 800px) {
   .column {
     flex: 50%;
@@ -38,13 +37,14 @@ body {
   }
 }
 
-/* Stacking columns layout*/
+ Stacking columns layout
 @media (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
-}
+}*/
+
 .right {
   float: right;
 }
@@ -233,12 +233,12 @@ body {
 
 /*Pie chart formatting added by Ana D
 ====
-/*Pie chart formatting added by Ana D*/
-/*.figure{
+  Pie chart formatting added by Ana D
+.figure{
   table-layout:auto;
   position: left;
 }
->>>>>>> ee3d23d2ff4ea072c8c928393d726e312b2b39ed*/
+>>>>>>> ee3d23d2ff4ea072c8c928393d726e312b2b39ed
    .pie-chart {
     background:
       radial-gradient(
@@ -295,8 +295,7 @@ body {
     height: 0.8em;
     border-radius: 0.2em;
     background: currentColor;
-  }
-
+  }*/
   
 /***** LISTS *****/
 .container {
@@ -352,6 +351,7 @@ h2 {
 .item:first-child {
   padding-top: 1px;
 }
+
 /*.item:nth-child(even) {
   background-color: #fff7e6;
 }*/
@@ -463,6 +463,7 @@ h2 {
 
   footer ul li {
     margin-left: 16px;
+    list-style: none;
   }
   
   footer p {
@@ -470,4 +471,22 @@ h2 {
     font-size: 14px;
     opacity: 0.6;
     align-self: center;
+  }
+
+a{
+  color:white;
+}
+  #fb:hover {
+    color: #3B5998;
+  }
+
+  #yt:hover {
+    color: #ff0000;
+  }
+
+  #tw:hover {
+    color: #4099FF;
+  }
+  #gh:hover {
+    color: #000000;
   }
