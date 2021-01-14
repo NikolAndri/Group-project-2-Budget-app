@@ -252,7 +252,6 @@ h1{
   outline: none;
 }
 
-
 /*Pie chart formatting added by Ana D
 ====
   Pie chart formatting added by Ana D
@@ -537,6 +536,26 @@ footer p {
   align-self: center;
   text-align: center;
 }
+
+#chartContainer{
+  border-radius: 25px;
+}
+.donate-button {
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0;
+  background-color: white;
+  padding: 12px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  margin-bottom: 20px;
+}
+
+.donate-button:hover {
+    background-color: #106346;
+    color: white;
+  }
 
   #fb:hover {
     color: #3B5998;
