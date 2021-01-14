@@ -231,6 +231,7 @@ var UIController = (function () {
         incomeLabel: '.budget__income--value',
         expenseLabel: '.budget__expenses--value',
         percentageLabel: '.budget__expenses--percentage',
+        percentageLabel1: '.budget__income--percentage',
         container: '.container',
         expensePercLabel: '.item__percentage',
         dateLabel: '.budget__title--month'
@@ -348,6 +349,8 @@ var UIController = (function () {
             document.querySelector(DOMstrings.expenseLabel).textContent = formatNumber(obj.totalExp, 'exp');
             if(obj.percentage > 0){
                 document.querySelector(DOMstrings.percentageLabel).textContent = obj.percentage + "%" ;
+               
+                document.querySelector(DOMstrings.percentageLabel1).textContent = 100 - obj.percentage + "%" ;
             }else{
                 document.querySelector(DOMstrings.percentageLabel).textContent = "---";
             }
