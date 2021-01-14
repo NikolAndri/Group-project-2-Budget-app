@@ -177,6 +177,7 @@ body {
 .add__description_plus,
 .add__value_plus,.add__description_minus,
 .add__value_minus {
+  outline: none;
   border: 1px solid rgba(203, 236, 228, 0.849);
   background-color: white;
   opacity: 0.9;
