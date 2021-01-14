@@ -154,7 +154,6 @@ body {
 /***** FORM *****/
 .add {
   padding: 14px;
-  border-bottom: 1px solid white;
 }
 
 .add__container {
@@ -417,7 +416,7 @@ h2 {
 }
 
 .item:hover .item__delete--btn {
-  display: block;
+  display:block;
 }
 .item:hover .item__value {
   transform: translateX(-20px);
@@ -447,6 +446,7 @@ h2 {
   padding: 12px;
   border-radius: 50px;
   transition-duration: 0.4s;
+  margin-bottom: 20px;
 }
 .clear-button:hover {
     background-color: #d90429;
@@ -456,14 +456,15 @@ h2 {
   /* footer stuff (Uri)*/
   footer {
     display: flex;
-    /* width: 100%;
-    bottom:0;
+    width: 100%;
+    /*bottom:0;
     left:0; */
     align-items: center;
     justify-content: space-around;
     background-color: #607d8b;
     color: #fff;
     padding: 20px 0;
+    border-radius: 50px;
   }
 
   footer ul {
@@ -478,13 +479,29 @@ h2 {
   footer p {
     text-transform: uppercase;
     font-size: 14px;
-    /* opacity: 0.6; */
+    opacity: 0.9;
     align-self: center;
   }
 
-a{
-  color:white;
+  .insipirationalQuotes{
+  border-radius: 25px;
+  margin: 20px;
+  padding: 25px;
+  background-color: white;
+  text-align: center;
+  }
+
+.quote{
+color: #106346;
+font-style: italic;
+font-size: larger;
 }
+
+.author{
+  padding-bottom: 20px;
+  color:#1080ff;
+}
+
   #fb:hover {
     color: #3B5998;
   }
