@@ -1,3 +1,29 @@
+var chartupdate = function (x,  t){
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        title: {
+            text: "Budget Chart"
+        },
+        data: [{
+            type: "pie",
+            startAngle: 240,
+            yValueFormatString: "##0.00\"%\"",
+            indexLabel: "{label} {y}",
+            dataPoints: [
+                {y: x, label: "Savings"},
+                {y: t, label: "expense"},
+             
+            ]
+        }]
+    });
+    chart.render();
+}
+
+window.onload = function() {
+chartupdate(100,0);
+
+    
+    }
 var budgetController = (function () {
     var Expense = function (id, description, value) {
         this.id = id;
@@ -426,6 +452,9 @@ var Controller = (function (budgetCtrl, UICtrl) {
         
         // 3. Update the UI
         UICtrl.displayBudget(budget);
+       
+        var s = budget.totalExp / budget.totalInc * 100;
+        chartupdate(100-s,s);
     };
 
     var updatePercentages = function(){
@@ -464,7 +493,7 @@ var Controller = (function (budgetCtrl, UICtrl) {
 
             // 5. Calculate and Update budget
             updateBudget();
-            updatechar();
+           
             // 6. Calculate and update Percentages
             updatePercentages();
 
@@ -494,7 +523,7 @@ var Controller = (function (budgetCtrl, UICtrl) {
 
             // 5. Calculate and Update budget
             updateBudget();
-            updatechar();
+      
             // 6. Calculate and update Percentages
             updatePercentages();
 
