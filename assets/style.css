@@ -505,12 +505,13 @@ font-size: larger;
   color:#1080ff;
 }
  
-.donate-button {
+.budgeting-button {
+  
   text-transform: uppercase;
   outline: none;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: rgb(95, 95, 86), 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 0;
-  background-color: white;
+  background-color: greenyellow;
   padding: 12px;
   border-radius: 50px;
   transition-duration: 0.4s;
@@ -520,7 +521,7 @@ font-size: larger;
 
 .donate-button:hover {
     background-color: #106346;
-    color: white;
+    color: rgb(149, 241, 11);
   } 
 /* footer stuff (Uri)*/
 footer {
